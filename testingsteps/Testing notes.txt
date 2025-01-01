@@ -1,0 +1,128 @@
+
+
+Step 1  Starting with JMeter
+
+Step 2  Create A test plan
+
+Step 3 Add thread group (no of users)
+
+Step 4 Add Sampler
+
+Step 5 Add Listeners
+       View Result in Table
+       View Result Tree
+       Graph Results
+       Simple Data Writer
+       Summary Report
+       Assertion Results
+
+==========================================================================================
+Assertions: checks on response 
+
+Response Assertions
+Size Assertions 
+Duration Assertions
+HTML Assertions
+JSON Assertions
+XPath Assertions
+
+==========================================================================================================
+Record UI 
+
+
+Badboy software
+Blazemaster
+
+
+=========================================================================================================
+
+File Download Test Plan
+
+Step 1: Create Test Plan
+
+Step  2:  Add users
+
+Step 3:  Add Sampler : HTTP Request  
+
+Set method to GET  and give url : speedtest.tele2.net  
+
+Set path : /1MB.zip
+
+Step  4: Add Listeners View Result Tree
+
+Step 5 : Add Listener Save Response to the file :  file path : give path where you want to save downloaded file
+
+For multti user down use ${__threadNum} function
+
+Go to Tools : Select FUNCTION HELPER DIALOG : Select thread num and click on generate and copy button to generate ${__threadNum} function
+
+==============================================================================================================================================
+
+JDBC = Database Testing Plan 
+
+
+Step  2 : Create Test Plan 
+Step 3:  Go to Config : Select JDBC Connection Configuration  give variable name for ex  conn 
+
+Step 1 :In case Driver is not found than 
+Download jdbc driver from official website  https://dev.mysql.com/downloads/connector/j/?os=26
+Extract your zip file and copy Driver Jar file : jdbc -MySQL -driver
+Goto JMETER -- > LIB--> Paste Jar file
+Once paste restart jmeter
+
+
+Step 4 : MAKE NO OF CONNECTION TO 1 TO SOME NO . add url jdbc:mysql://localhost:3306/dbname For Mysql
+
+Step  5: add driver class  com.jdbc.mysql.Driver 
+
+Step  6:  username  : root  and password : 1234
+
+Step  7 : Add JDBC Request Sampler
+
+Step 8: In JDBC Sampler give variable name example conn
+
+Step 9 :  Select query type example Select
+
+Step 10 : write your query  example select * from tablename
+
+Step 11:  Add listener  view result tree to see test pass or fail  
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+Step 3:
+Database URL : jdbc:mysql://localhost:3306/dbname
+
+
+========================================Plugin Manager===============================================
+
+we need plugin manager to update, install , uninstall the plugins
+
+==>  To Add Plugin Manually
+
+Go to Jmeter plugin ---> select ---> plugin ---> down load jar
+
+ paste your plugin : JMETER--->LIB-->EXT --->paste your plugin and restart the JMETER
+
+==> To Add Plugin Manager
+Step 1 : Download plugin manager jar from https://jmeter-plugins.org/wiki/PluginsManager/ 
+
+Step 2 : Copy or cut the jar file and paste it to
+
+
+Open JMeter ---> Bin ---> Ext ---> paste plugin manager jar file
+
+Step 3 : Restart JMeter
+
+Step 4:  Goto Option Menu and select the Plugin Manager option 3 columns will be available
+
+i) plugin install
+ii) plugin available
+iii) plugin update
+
+
+
+
+
+

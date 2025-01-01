@@ -1,0 +1,47 @@
+Why we need non gui of JMeter
+
+In GUI mode JMeter need resources 
+
+While doing heavy load testing  : it will increase cost 
+
+Interegation with 3rd party software like jira / ci  cli is useful
+
+
+
+
+To run jmeter in non gui (cli mode)
+
+
+Step 1: Open JMeter Bin Folder Path in CMD
+
+Step 2: jmeter -n -t locationof jmeter file you want to run  -l resultfilelocation
+
+-n :  non gui
+
+-l : log file  : log file should be empty
+
+-t : test file
+
+
+jmeter -n  -t  D:\jmeter\Jmeterworkspace\MyWikipediaScript.jmx  -l D:\jmeter\Jmeterworkspace\wikipediaresult.csv
+
+
+HTML Report Generation Using non gui 
+
+
+jmeter -n  -t  D:\jmeter\Jmeterworkspace\DatabaseAssertionTestPlan.jmx  -l D:\jmeter\Jmeterworkspace\jdbcdatabaseassertresult.csv
+-e -o  D:\jmeter\Jmeterworkspace\Jmeterreports\htmlreports\dbtesthtmlreport
+
+-e  generate report after loading test result
+-o  folder for report
+
+folder in which report is generated should be empty
+
+==============Generate HTML Report from output/log file====================================================
+
+jmeter -g logfile -o reportfolderlocation
+
+jmeter -g D:\jmeter\Jmeterworkspace\MyDataWriterResults.csv -o D:\jmeter\Jmeterworkspace\Jmeterreports\htmlreport2
+
+
+
