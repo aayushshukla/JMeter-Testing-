@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1735727277968,987,https://en.wikipedia.org/wiki/Main_Page,200,OK,Thread Group 1-1,text,true,,114692,310,1,1,https://en.wikipedia.org/wiki/Main_Page,762,0,636
+1735727278964,655,https://en.wikipedia.org/w/index.php,200,OK,Thread Group 1-1,text,true,,62271,584,1,1,https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit,538,0,0
+1735727279622,137,https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/3,200,OK,Thread Group 1-1,text,true,,99549,595,1,1,https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/3,89,0,0
+1735727279760,1475,https://en.wikipedia.org/w/index.php,200,OK,Thread Group 1-1,text,true,,34609,712,1,1,https://en.wikipedia.org/w/index.php?returnto=Wikipedia%3ACascade-protected+items%2FMain+Page%2F3&title=Special%3AUserLogin&centralAuthAutologinTried=1&centralAuthError=Not+centrally+logged+in,1474,0,501
+1735727281240,408,https://en.wikipedia.org/w/index.php,200,OK,Thread Group 1-1,text,true,,34221,994,1,1,https://en.wikipedia.org/w/index.php,399,0,0
