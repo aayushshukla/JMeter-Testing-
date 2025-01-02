@@ -1,0 +1,41 @@
+Testing SOAP Api
+
+Step 1: Create a test plan 
+
+Step 2: Add thread group 
+
+Step3 : Add HttpRequest  
+
+  Add protocol : https
+  Server:  ecs.syr.edu
+  path : /faculty/fawcett/handouts/cse686/code/calcWebService/Calc.asmx
+  method : post  we adding values
+
+Body  start from SOAP Envelop
+
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Add xmlns="http://tempuri.org/">
+      <a>int</a>
+      <b>int</b>
+    </Add>
+  </soap:Body>
+</soap:Envelope>
+
+    
+Step 4: Add HTTPHeaderManager 
+
+Add FOLLOWING 
+
+Content-Type :  text/xml; charset=utf-8
+
+SOAPAction : check webservice soap action example  "http://tempuri.org/Add"
+
+Step 5: Add Listener : ViewTreeResult
+
+Step 6  : Adding Assertion : Response Assertion : select text response and patter substring 
+
+check  response of web service
+forexample : <AddResult>30</AddResult>
+
+Step 7: Add Listener : AssertionResult

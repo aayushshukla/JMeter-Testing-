@@ -1,0 +1,27 @@
+JMeter Record ApiTesting From Postman using proxy
+
+1 Create a recording plan
+
+Jmeter ---> Templates ---> recording ---> 
+
+hostname : localhost DONT CLICK ON CREATE NOW 
+
+
+Step 2: Set Proxy
+
+Windows --- > setting ---> proxysettings ---> use proxy server make it on --->
+set server : localhost and port no : anyportno example 8888
+
+Step 3: Open Postman  (we can do proxy setting from postman also )
+postman ---> setting ---> proxy  --> custom proxy and fill the details  
+
+Step 4: Go to your JMeter set hostnames as localhost in reoceding template and then 
+click on create once created
+
+Step 5: HttpTestScriptRecorder  check port no and click on start button
+
+Step 6: in postman make reuest and those rrequest will be recoded
+
+
+
+

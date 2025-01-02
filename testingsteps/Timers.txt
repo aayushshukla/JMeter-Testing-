@@ -1,0 +1,34 @@
+Timers:
+
+Why we need timers:
+   to pause thread for some time
+   to add delay between threads
+   to avoid over loading the server 
+   to achieve real time behaviour by pacing the load 
+  
+
+wait 5sec 
+
+user1 Req 1  -  5 sec
+
+user2 Req  1  - 5sec
+
+wait 10 sec
+
+Req2   - 10 sec
+
+REQ 2  - 10 SEC 
+
+
+Constant timer
+Uniform Random Timer 
+
+ 
+Random Delay Max           by default it set 100
+Constant Random Offset     by default it set 0
+
+total delay in thread= 0.X *Random Delay Max + Constant delay offset
+
+X: 0-9
+
+0.X * 100 + 0  = 0-99

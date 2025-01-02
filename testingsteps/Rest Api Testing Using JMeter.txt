@@ -1,0 +1,29 @@
+Rest Api Testing Using JMeter
+
+
+GET    https://reqres.in/api/users?page=2
+
+
+Step 1: Create Test Plan 
+
+Step 2 : Create Users
+
+Step 3: Create HTTP Request 
+
+This url wil be  written https://reqres.in/api/users?page=2
+in following way
+
+http: https
+url: reqres.in
+path: /api/users?
+query : page=2
+
+
+
+Sampler1
+    Action1
+    Listner1 
+Sampler2
+    Listner2
+Sampler5
+Listner3

@@ -1,0 +1,5 @@
+TestPlanCheck.bat --jmx D:\jmeter\Jmeterworkspace\SoapTestingPlan.jmx --tree-dump
+
+TestPlanCheck.bat --jmx D:\jmeter\Jmeterworkspace\SoapTestingPlan.jmx --stats
+
+TestPlanCheck.bat --jmx D:\jmeter\Jmeterworkspace\SoapTestingPlan.jmx --stats  --tree-dump
