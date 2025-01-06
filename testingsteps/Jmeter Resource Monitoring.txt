@@ -1,0 +1,11 @@
+Jmeter Resource Monitoring
+
+
+Step 1: Download and install Perfmon plugin
+
+Step 2: Download and extract SeverAgent for Perfmon 
+
+**make sure you extract ServerAgent in C drive
+
+Step 4: Start your server agent
+

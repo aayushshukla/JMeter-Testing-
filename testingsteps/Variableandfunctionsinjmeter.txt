@@ -1,0 +1,11 @@
+
+Variables : containers that can store a value which can be referenced to any other element of thread(local to thread)
+
+Jmeter variable syntax :  ${variablename}
+ 
+Functions :  any method that can populate a field in any other element of a test plan 
+Functions  Jmeter Syntax:  
+
+${__functioname}  function without arguments
+
+${__functioname(ar1,ag2..argn)} functions with arguments
